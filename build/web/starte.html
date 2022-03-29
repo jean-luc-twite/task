@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>start page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <h1>start</h1>
+            
+            <P>this the page where we are to start our web Application</P>
+        </div>
+        <div>
+            <form action="SessionServlet.do" method="POST">
+                <table>
+                    <tr>
+                        <td>Name:</td>
+                        <td><input type ="text" name ="name" placeholder="enter your name"/></td>
+                    </tr>
+                    <!<!-- user choose  -->
+                    <tr>
+                        <td>Operation:</td>
+                        <td><select name ="op">
+                                <option value ="+" >Addition</option>
+                                <option value ="*" >multiplication</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <!<!-- user submit -->
+                              <tr>
+                        <td></td>
+                        <td><input type ="SUBMIT" value ="submit"/></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>
